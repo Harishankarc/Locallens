@@ -45,7 +45,7 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="flex justify-between items-center px-6 py-2 shadow-xl bg-[#161616] sticky top-0 z-50 "
+      className="flex justify-between items-center px-6 py-2 shadow-xl bg-black sticky top-0 z-50 "
     >
       <motion.div
         whileHover={{ scale: 1.05 }}

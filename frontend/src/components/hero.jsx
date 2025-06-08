@@ -1,10 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Hero(){
   return(
-    <div className="bg-[#161616] h-screen w-screen flex flex-col justify-center items-center text-white px-10">
+    <div className=" h-screen w-screen flex flex-col justify-center items-center text-white px-10">
         <div className="text-center flex gap-2 flex-col justify-center items-center">
           <h1 className="md:text-7xl text-6xl">LocalService Community</h1>
           <h1 className="md:text-4xl text-3xl mb-10">find your service in minutes.</h1>
@@ -16,7 +17,7 @@ export default function Hero(){
           animate={{ y: [0, 15, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
-          <ChevronDown size={40} className="text-amber-700 hover:text-amber-800 transition-colors" />
+          <a href="#explore"><ChevronDown size={40} className="text-amber-700 hover:text-amber-800 transition-colors" /></a>
         </motion.div>
         </div>
       </div>

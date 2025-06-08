@@ -1,15 +1,16 @@
 'use client';
 
 import Hero from "@/components/hero";
-import MapPage from "@/components/map";
+import Popular from "@/components/popular";
+import Services from "@/components/services";
 
 export default function Home() {
 
   return (
-    <div>
+    <div className="bg-black">
       <Hero/>
-      <MapPage />
-
+      <Services/>
+      <Popular/>
     </div>
   );
 }
